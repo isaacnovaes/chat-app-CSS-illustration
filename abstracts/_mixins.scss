@@ -1,1 +1,9 @@
-
+@mixin paragraph($color) {
+    color:$color;
+    font-size: 0.565rem;
+    font-family: $font;
+    width: 56.5%;
+    padding: 6px;
+    border-radius: 8px;
+    line-height: 1.52;
+}

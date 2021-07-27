@@ -85,32 +85,42 @@ button:-moz-focusring,
 }
 
 div.wrapper-all {
-  height: 100vh;
-  max-height: 2000px;
+  height: 800px;
   max-width: 2000px;
   position: relative;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 div.wrapper-all main {
+  max-width: 270px;
+  min-width: 270px;
+  height: 730px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  margin-top: 50px;
+  left: calc(50% - 135px);
   position: absolute;
-  width: 800px;
-  left: 50%;
-  top: 40%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  z-index: 1;
 }
 
 div.wrapper-all main div.phone-container {
-  width: 280px;
-  height: 550px;
+  height: 510px;
   padding: 9px;
   position: relative;
   background-color: white;
   border-radius: 30px;
   -webkit-box-shadow: 1px 1px 80px rgba(128, 128, 128, 0.534);
           box-shadow: 1px 1px 80px rgba(128, 128, 128, 0.534);
-  border-top-right-radius: 1px solid red;
 }
 
 div.wrapper-all main div.phone-container div.phone-screen {
@@ -123,20 +133,20 @@ div.wrapper-all main div.phone-container div.phone-screen {
 div.wrapper-all main div.phone-container div.phone-screen::after {
   content: " ";
   display: block;
-  width: 60%;
+  width: 55%;
   height: 20px;
   background-color: white;
   position: absolute;
   top: -1px;
-  left: 20%;
-  border-radius: 0 0 10px 10px;
+  left: calc(47% / 2);
+  border-radius: 0 0 12px 12px;
   z-index: 2;
 }
 
 div.wrapper-all main div.phone-container div.phone-screen div.phone-screen-header {
   background-image: -webkit-gradient(linear, left top, right top, from(#8838ff), to(#e942ff));
   background-image: linear-gradient(to right, #8838ff, #e942ff);
-  height: 10%;
+  height: 12%;
   border-radius: 20px 20px 4px 4px;
   position: relative;
 }
@@ -152,7 +162,7 @@ div.wrapper-all main div.phone-container div.phone-screen div.phone-screen-heade
   -ms-flex-line-pack: center;
       align-content: center;
   position: absolute;
-  bottom: 0;
+  bottom: 5px;
 }
 
 div.wrapper-all main div.phone-container div.phone-screen div.phone-screen-header div.phone-screen-header-data span:first-of-type {
@@ -178,10 +188,12 @@ div.wrapper-all main div.phone-container div.phone-screen div.phone-screen-heade
 }
 
 div.wrapper-all main div.phone-container div.phone-screen div.phone-screen-header div.phone-screen-header-data p:first-of-type, div.wrapper-all main div.phone-container div.phone-screen div.phone-screen-header div.phone-screen-header-data p:nth-of-type(2) {
-  padding-left: 5px;
   color: white;
   font-family: "Rubik", sans-serif;
+  font-weight: 500;
+  font-family: "Rubik", sans-serif;
   font-size: 0.8rem;
+  padding-left: 10px;
 }
 
 div.wrapper-all main div.phone-container div.phone-screen div.phone-screen-header div.phone-screen-header-data p:nth-of-type(2) {
@@ -191,6 +203,7 @@ div.wrapper-all main div.phone-container div.phone-screen div.phone-screen-heade
   -ms-grid-column-span: 1;
   grid-area: 2/3/3/4;
   font-size: 0.5rem;
+  color: #d89eff;
 }
 
 div.wrapper-all main div.phone-container div.phone-screen div.phone-screen-header div.phone-screen-header-data span:last-of-type {
@@ -203,20 +216,170 @@ div.wrapper-all main div.phone-container div.phone-screen div.phone-screen-heade
   padding-top: 4px;
 }
 
-div.wrapper-all div.bg {
-  position: absolute;
-  top: 0;
-  width: 500px;
-  height: 700px;
-  z-index: -1;
+div.wrapper-all main div.phone-container div.phone-screen div.phone-screen-main {
+  padding: 0 5px;
 }
 
-div.wrapper-all div.bg div.curved-bg {
-  width: 100%;
-  height: 100%;
-  background: -webkit-gradient(linear, left top, left bottom, from(#8838ff), to(#e942ff));
-  background: linear-gradient(to bottom, #8838ff, #e942ff);
-  -webkit-clip-path: ellipse(95% 100% at 50% 0%);
-          clip-path: ellipse(95% 100% at 50% 0%);
+div.wrapper-all main div.phone-container div.phone-screen div.phone-screen-main p.left {
+  color: #9241c8;
+  font-size: 0.565rem;
+  font-family: "Rubik", sans-serif;
+  width: 56.5%;
+  padding: 6px;
+  border-radius: 8px;
+  line-height: 1.52;
+  background-color: rgba(128, 102, 153, 0.096);
+  margin: 10px 0;
+}
+
+div.wrapper-all main div.phone-container div.phone-screen div.phone-screen-main picture {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 10px;
+}
+
+div.wrapper-all main div.phone-container div.phone-screen div.phone-screen-main picture img {
+  margin-left: 8px;
+  border-radius: 10px;
+}
+
+div.wrapper-all main div.phone-container div.phone-screen div.phone-screen-main p.right {
+  color: #6e5d7e;
+  font-size: 0.565rem;
+  font-family: "Rubik", sans-serif;
+  width: 56.5%;
+  padding: 6px;
+  border-radius: 8px;
+  line-height: 1.52;
+  background-color: white;
+  margin-left: 45%;
+  margin-bottom: 10px;
+}
+
+div.wrapper-all main div.phone-container div.phone-screen div.phone-screen-main p.right:nth-of-type(4) {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  position: relative;
+  left: 50px;
+}
+
+div.wrapper-all main div.phone-container div.phone-screen div.phone-screen-main div.service-pricing {
+  width: 70%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  background-image: -webkit-gradient(linear, right top, left top, from(#8838ff), to(#e942ff));
+  background-image: linear-gradient(to left, #8838ff, #e942ff);
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 15px auto 25px;
+      grid-template-columns: 15px auto 25px;
+  -ms-grid-rows: 15px;
+      grid-template-rows: 15px;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+div.wrapper-all main div.phone-container div.phone-screen div.phone-screen-main div.service-pricing p {
+  color: #d89eff;
+  font-family: "Rubik", sans-serif;
+  font-size: 0.55rem;
+  text-indent: 10px;
+  padding-top: 2px;
+}
+
+div.wrapper-all main div.phone-container div.phone-screen div.phone-screen-main div.service-pricing span.left {
+  content: " ";
+  display: inline-block;
+  border: 1px solid #e570ff;
+  border-radius: 50%;
+}
+
+div.wrapper-all main div.phone-container div.phone-screen div.phone-screen-main div.service-pricing span.right {
+  display: inline-block;
+  color: white;
+  font-family: "Rubik", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+div.wrapper-all main div.phone-container div.phone-screen div.phone-screen-main div.send-message {
+  background-color: white;
+  border-radius: 30px;
+  color: #c6cacd;
+  font-family: "Rubik", sans-serif;
+  font-size: 0.6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2px 6px;
+}
+
+div.wrapper-all main section.text-container h1.text-title {
+  color: #3e2753;
+  font-family: "Rubik", sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+div.wrapper-all main section.text-container p.text-paragraph {
+  color: #a39daa;
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  text-align: center;
+}
+
+@media screen and (min-width: 610px) {
+  div.wrapper-all {
+    height: 780px;
+  }
+  div.wrapper-all main {
+    width: 100%;
+    max-width: 850px;
+    min-width: none;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  div.wrapper-all main div.phone-container {
+    width: 270px;
+  }
+  div.wrapper-all main section.text-container {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  div.wrapper-all main section.text-container h1.text-title,
+  div.wrapper-all main section.text-container p.text-paragraph {
+    text-align: left;
+  }
 }
 /*# sourceMappingURL=main.css.map */
