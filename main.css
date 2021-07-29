@@ -2,7 +2,7 @@
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  line-height: 1.15;
+  line-height: 1.5;
   font-size: 100%;
   -webkit-text-size-adjust: 100%;
   /* Set core root defaults */
@@ -85,7 +85,7 @@ button:-moz-focusring,
 }
 
 div.wrapper-all {
-  height: 800px;
+  height: 870px;
   max-width: 2000px;
   position: relative;
   overflow: hidden;
@@ -93,8 +93,6 @@ div.wrapper-all {
 
 div.wrapper-all main {
   max-width: 270px;
-  min-width: 270px;
-  height: 730px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -121,6 +119,18 @@ div.wrapper-all main div.phone-container {
   border-radius: 30px;
   -webkit-box-shadow: 1px 1px 80px rgba(128, 128, 128, 0.534);
           box-shadow: 1px 1px 80px rgba(128, 128, 128, 0.534);
+}
+
+div.wrapper-all main div.phone-container::before {
+  content: " ";
+  height: 757px;
+  width: 579px;
+  display: block;
+  position: absolute;
+  left: -160%;
+  top: -60%;
+  background-image: url(/images/bg.svg);
+  z-index: -1;
 }
 
 div.wrapper-all main div.phone-container div.phone-screen {
@@ -329,6 +339,10 @@ div.wrapper-all main div.phone-container div.phone-screen div.phone-screen-main 
   padding: 2px 6px;
 }
 
+div.wrapper-all main section.text-container {
+  padding-top: 50px;
+}
+
 div.wrapper-all main section.text-container h1.text-title {
   color: #3e2753;
   font-family: "Rubik", sans-serif;
@@ -370,12 +384,18 @@ div.wrapper-all main section.text-container p.text-paragraph {
   div.wrapper-all main div.phone-container {
     width: 270px;
   }
+  div.wrapper-all main div.phone-container::before {
+    left: -189%;
+    top: -40%;
+    background-image: url(/images/big-bg.svg);
+  }
   div.wrapper-all main section.text-container {
     -ms-flex-preferred-size: 50%;
         flex-basis: 50%;
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
+    padding-top: 0;
   }
   div.wrapper-all main section.text-container h1.text-title,
   div.wrapper-all main section.text-container p.text-paragraph {

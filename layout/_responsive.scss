@@ -14,11 +14,17 @@
 
 			div.phone-container {
 				width: 270px;
+
+				&::before {
+					left: -189%;
+					top: -40%;
+					background-image: url(/images/big-bg.svg);
+				}
 			}
 			section.text-container {
 				flex-basis: 50%;
 				align-self: center;
-
+				padding-top: 0;
 				h1.text-title,
 				p.text-paragraph {
 					text-align: left;
