@@ -88,7 +88,6 @@ div.wrapper-all {
   height: 870px;
   max-width: 2000px;
   position: relative;
-  overflow: hidden;
 }
 
 div.wrapper-all main {
@@ -108,7 +107,6 @@ div.wrapper-all main {
   margin-top: 50px;
   left: calc(50% - 135px);
   position: absolute;
-  z-index: 1;
 }
 
 div.wrapper-all main div.phone-container {
@@ -150,7 +148,6 @@ div.wrapper-all main div.phone-container div.phone-screen::after {
   top: -1px;
   left: calc(47% / 2);
   border-radius: 0 0 12px 12px;
-  z-index: 2;
 }
 
 div.wrapper-all main div.phone-container div.phone-screen div.phone-screen-header {
@@ -228,6 +225,7 @@ div.wrapper-all main div.phone-container div.phone-screen div.phone-screen-heade
 
 div.wrapper-all main div.phone-container div.phone-screen div.phone-screen-main {
   padding: 0 5px;
+  overflow-x: hidden;
 }
 
 div.wrapper-all main div.phone-container div.phone-screen div.phone-screen-main p.left {
@@ -271,6 +269,8 @@ div.wrapper-all main div.phone-container div.phone-screen div.phone-screen-main 
   background-color: white;
   margin-left: 45%;
   margin-bottom: 10px;
+  -webkit-box-shadow: 1px 1px 8px rgba(128, 128, 128, 0.334);
+          box-shadow: 1px 1px 8px rgba(128, 128, 128, 0.334);
 }
 
 div.wrapper-all main div.phone-container div.phone-screen div.phone-screen-main p.right:nth-of-type(4) {
@@ -400,6 +400,123 @@ div.wrapper-all main section.text-container p.text-paragraph {
   div.wrapper-all main section.text-container h1.text-title,
   div.wrapper-all main section.text-container p.text-paragraph {
     text-align: left;
+  }
+}
+
+main div.phone-screen {
+  -webkit-animation: fade-animation 0.5s ease-out 0.5s backwards;
+          animation: fade-animation 0.5s ease-out 0.5s backwards;
+}
+
+main div.phone-screen-main p.left:nth-of-type(1) {
+  -webkit-animation: move-left-to-right 0.5s ease-out 2s backwards;
+          animation: move-left-to-right 0.5s ease-out 2s backwards;
+}
+
+main div.phone-screen-main p.left:nth-of-type(2) {
+  -webkit-animation: move-left-to-right 0.5s ease-out 3.8s backwards;
+          animation: move-left-to-right 0.5s ease-out 3.8s backwards;
+}
+
+main div.phone-screen-main picture img:nth-child(3) {
+  -webkit-animation: fade-animation 0.5s ease-out 5.6s backwards;
+          animation: fade-animation 0.5s ease-out 5.6s backwards;
+}
+
+main div.phone-screen-main picture img:nth-child(2) {
+  -webkit-animation: fade-animation 0.5s ease-out 6.4s backwards;
+          animation: fade-animation 0.5s ease-out 6.4s backwards;
+}
+
+main div.phone-screen-main picture img:nth-child(1) {
+  -webkit-animation: fade-animation 0.5s ease-out 7.2s backwards;
+          animation: fade-animation 0.5s ease-out 7.2s backwards;
+}
+
+main div.phone-screen-main p.right:nth-of-type(3) {
+  -webkit-animation: move-right-to-left 0.5s ease-out 8.5s backwards;
+          animation: move-right-to-left 0.5s ease-out 8.5s backwards;
+}
+
+main div.phone-screen-main p.right:nth-of-type(4) {
+  -webkit-animation: move-right-to-left 0.5s ease-out 10.3s backwards;
+          animation: move-right-to-left 0.5s ease-out 10.3s backwards;
+}
+
+main div.phone-screen-main p.left:nth-of-type(5) {
+  -webkit-animation: move-left-to-right 0.5s ease-out 12.1s backwards;
+          animation: move-left-to-right 0.5s ease-out 12.1s backwards;
+}
+
+main div.phone-screen-main div.service-pricing:nth-of-type(1) {
+  -webkit-animation: move-left-to-right 0.5s ease-out 13.9s backwards;
+          animation: move-left-to-right 0.5s ease-out 13.9s backwards;
+}
+
+main div.phone-screen-main div.service-pricing:nth-of-type(2) {
+  -webkit-animation: move-left-to-right 0.5s ease-out 15.7s backwards;
+          animation: move-left-to-right 0.5s ease-out 15.7s backwards;
+}
+
+@-webkit-keyframes move-left-to-right {
+  from {
+    -webkit-transform: translateX(-180px);
+            transform: translateX(-180px);
+  }
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes move-left-to-right {
+  from {
+    -webkit-transform: translateX(-180px);
+            transform: translateX(-180px);
+  }
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@-webkit-keyframes fade-animation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-animation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes move-right-to-left {
+  from {
+    -webkit-transform: translateX(150px);
+            transform: translateX(150px);
+  }
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes move-right-to-left {
+  from {
+    -webkit-transform: translateX(150px);
+            transform: translateX(150px);
+  }
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
 }
 /*# sourceMappingURL=main.css.map */

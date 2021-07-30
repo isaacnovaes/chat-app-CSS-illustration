@@ -1,0 +1,68 @@
+main {
+	div.phone-screen {
+		@include fade(0.5s, .5s);
+	}
+	div.phone-screen-main {
+		//
+		p.left:nth-of-type(1) {
+			@include left-to-right(0.5s, 2s);
+		}
+		p.left:nth-of-type(2) {
+			@include left-to-right(0.5s, 3.8s);
+		}
+		picture {
+			img:nth-child(3) {
+				@include fade(0.5s, 5.6s);
+			}
+			img:nth-child(2) {
+				@include fade(0.5s, 6.4s);
+			}
+
+			img:nth-child(1) {
+				@include fade(0.5s, 7.2s);
+			}
+		}
+		p.right:nth-of-type(3) {
+			@include right-to-left(0.5s, 8.5s);
+		}
+		p.right:nth-of-type(4) {
+			@include right-to-left(0.5s, 10.3s);
+		}
+		p.left:nth-of-type(5) {
+			@include left-to-right(0.5s, 12.1s);
+		}
+		div.service-pricing:nth-of-type(1) {
+			@include left-to-right(0.5s, 13.9s);
+		}
+		div.service-pricing:nth-of-type(2) {
+			@include left-to-right(0.5s, 15.7s);
+		}
+	}
+}
+
+@keyframes move-left-to-right {
+	from {
+		transform: translateX(-180px);
+	}
+	to {
+		transform: translateX(0);
+	}
+}
+
+@keyframes fade-animation {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+@keyframes move-right-to-left {
+	from {
+		transform: translateX(150px);
+	}
+	to {
+		transform: translateX(0);
+	}
+}

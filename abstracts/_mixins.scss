@@ -1,9 +1,19 @@
 @mixin paragraph($color) {
-    color:$color;
-    font-size: 0.565rem;
-    font-family: $font;
-    width: 56.5%;
-    padding: 6px;
-    border-radius: 8px;
-    line-height: 1.52;
+	color: $color;
+	font-size: 0.565rem;
+	font-family: $font;
+	width: 56.5%;
+	padding: 6px;
+	border-radius: 8px;
+	line-height: 1.52;
+}
+
+@mixin left-to-right($time, $delay) {
+	animation: move-left-to-right $time ease-out $delay backwards;
+}
+@mixin fade($time, $delay) {
+	animation: fade-animation $time ease-out $delay backwards;
+}
+@mixin right-to-left($time, $delay) {
+	animation: move-right-to-left $time ease-out $delay backwards;
 }
