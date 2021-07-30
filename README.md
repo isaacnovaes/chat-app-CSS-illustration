@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Links
 
-- [ADD HERE THE LINK TO NETLYFY!!!](https://your-live-site-url.com)
+- [Live project](https://css-only-chat-app.netlify.app)
 
 ## My process
 
