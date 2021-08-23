@@ -1,6 +1,6 @@
 main {
 	div.phone-screen {
-		@include fade(0.5s, .5s);
+		@include fade(0.5s, 0.5s);
 	}
 	div.phone-screen-main {
 		//
@@ -10,7 +10,7 @@ main {
 		p.left:nth-of-type(2) {
 			@include left-to-right(0.5s, 3.8s);
 		}
-		picture {
+		figure {
 			img:nth-child(3) {
 				@include fade(0.5s, 5.6s);
 			}

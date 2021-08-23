@@ -240,7 +240,7 @@ div.wrapper-all main div.phone-container div.phone-screen div.phone-screen-main 
   margin: 10px 0;
 }
 
-div.wrapper-all main div.phone-container div.phone-screen div.phone-screen-main picture {
+div.wrapper-all main div.phone-container div.phone-screen div.phone-screen-main figure {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -253,7 +253,7 @@ div.wrapper-all main div.phone-container div.phone-screen div.phone-screen-main 
   margin-bottom: 10px;
 }
 
-div.wrapper-all main div.phone-container div.phone-screen div.phone-screen-main picture img {
+div.wrapper-all main div.phone-container div.phone-screen div.phone-screen-main figure img {
   margin-left: 8px;
   border-radius: 10px;
 }
@@ -418,17 +418,17 @@ main div.phone-screen-main p.left:nth-of-type(2) {
           animation: move-left-to-right 0.5s ease-out 3.8s backwards;
 }
 
-main div.phone-screen-main picture img:nth-child(3) {
+main div.phone-screen-main figure img:nth-child(3) {
   -webkit-animation: fade-animation 0.5s ease-out 5.6s backwards;
           animation: fade-animation 0.5s ease-out 5.6s backwards;
 }
 
-main div.phone-screen-main picture img:nth-child(2) {
+main div.phone-screen-main figure img:nth-child(2) {
   -webkit-animation: fade-animation 0.5s ease-out 6.4s backwards;
           animation: fade-animation 0.5s ease-out 6.4s backwards;
 }
 
-main div.phone-screen-main picture img:nth-child(1) {
+main div.phone-screen-main figure img:nth-child(1) {
   -webkit-animation: fade-animation 0.5s ease-out 7.2s backwards;
           animation: fade-animation 0.5s ease-out 7.2s backwards;
 }
@@ -519,4 +519,3 @@ main div.phone-screen-main div.service-pricing:nth-of-type(2) {
             transform: translateX(0);
   }
 }
-/*# sourceMappingURL=main.css.map */

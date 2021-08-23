@@ -49,11 +49,7 @@ div.wrapper-all {
 				}
 
 				div.phone-screen-header {
-					background-image: linear-gradient(
-						to right,
-						$first-color-gradient,
-						$second-color-gradient
-					);
+					background-image: linear-gradient(to right, $first-color-gradient, $second-color-gradient);
 					height: 12%;
 					border-radius: 20px 20px 4px 4px;
 					position: relative;
@@ -108,7 +104,7 @@ div.wrapper-all {
 						background-color: hsla(271, 20%, 50%, 0.096);
 						margin: 10px 0;
 					}
-					picture {
+					figure {
 						display: flex;
 						justify-content: flex-end;
 						align-items: center;
@@ -137,11 +133,7 @@ div.wrapper-all {
 						padding: 8px;
 						margin-bottom: 10px;
 						border-radius: 10px;
-						background-image: linear-gradient(
-							to left,
-							$first-color-gradient,
-							$second-color-gradient
-						);
+						background-image: linear-gradient(to left, $first-color-gradient, $second-color-gradient);
 						display: grid;
 						grid-template-columns: 15px auto 25px;
 						grid-template-rows: 15px;
